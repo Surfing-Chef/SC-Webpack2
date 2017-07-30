@@ -9,7 +9,13 @@ This repository holds the source code of Webpack 2 Tutorials. Each branch is a s
 - [7 video series](https://www.youtube.com/playlist?list=PL55RiY5tL51rcCnrOrZixuOsZhAHHy6os) on YouTube
 - The full source code can be found in the following Github repo (choose the right branch!): https://github.com/mschwarzmueller/yt-webpack2-basics
 
-### Basic Babel + SCSS Workflow ###
+### HTML + Image Loaders ###
+This workflow builds on a Babel + SCSS Workflow.
+
+Files are arranged in src and dist folders.  All working assets and files used to create the project are organized in the src folder: SASS, JS, HTML, img, etc. The dist folder is the output destination, organizing all the processed assets necessary for a complete deployment package, all in one folder.
+
+This workflow will inject CSS and JS links into the HTML file automatically. It will also copy required image files from the src folder into the dist folder.
+
 This workflow uses 2 processes SCSS and JS.
 All the imports terminate in app.js, but the css or scss doesn't get mixed with the javascript. Webkit just starts its journey there.
 #### SASS ####
